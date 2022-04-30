@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: djangorestframework-pagination
-Version: 1.0
+Version: 1.1
 Summary: response pagination using django restframework
 Home-page: https://github.com/alishekari/djangorestframework_pagination
 Author: Ali Shekari

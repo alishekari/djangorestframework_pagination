@@ -23,7 +23,8 @@ class PaginationObject:
         if self.page > p.num_pages:
             self.current_page_objects_data = []
         else:
-            self.current_page_objects_data = self.serializer(instance=p.page(self.page), many=True).data
+            self.current_page_objects_data = self.serializer(instance=p.page(self.page), many=True,
+                                                             context={'user': self.user}).data
 
     def serializer_data(self):
         return {'number_of_objects': len(self.all_objects), 'number_of_pages': self.number_of_pages,
